@@ -12,6 +12,18 @@ export default (state, action) => {
     case TASK_DONE:
       return {
         ...state,
+        todoList: state.todoList.map((todo) =>
+          todo.id === action.payload ? { ...todo, isDone: true } : todo
+        ),
+      };
+
+    //Task UnDone
+    case TASK_UNDONE:
+      return {
+        ...state,
+        todoList: state.todoList.map((todo) =>
+          todo.id === action.payload ? { ...todo, isDone: false } : todo
+        ),
       };
     //Finish a Goal
     case GOAL_DONE:

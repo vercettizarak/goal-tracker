@@ -14,7 +14,7 @@ const WeeklyGoals = () => {
     <div>
       <div className='card border-primary mb-3'>
         <div className='card-header'>
-          <h5 className='text-primary'>Goals to Accomplish</h5>
+          <h5 className='text-primary'>Goals of the Week</h5>
         </div>
         <div className='card-body'>
           {weeklyGoals.unfinished.map((goal) => (

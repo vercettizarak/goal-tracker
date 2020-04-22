@@ -91,6 +91,8 @@ const AuthState = (props) => {
         goalDone,
         undoGoal,
         deleteGoal,
+        taskDone,
+        taskUnDone,
       }}
     >
       {props.children}
