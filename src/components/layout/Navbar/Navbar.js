@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-md navbar-dark bg-dark text-white mb-3'>
       <div className='container-md d-flex justify-content-between'>
-        <a href='#!' className='navbar-brand '>
+        <Link to='/' className='navbar-brand '>
           Goals Tracker - Track your Goals
-        </a>
+        </Link>
 
         <button
           className='navbar-toggler'
@@ -18,19 +19,24 @@ const Navbar = () => {
         <div className='collapse navbar-collapse ' id='navbarNav'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
-              <a className='nav-link' href='#!'>
+              <Link className='nav-link' to='#!'>
                 User
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#!'>
+              <Link className='nav-link' to='#!'>
                 <i className='fas fa-cog'></i>
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#!'>
+              <Link className='nav-link' to='#!'>
                 Log out
-              </a>
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/about'>
+                About
+              </Link>
             </li>
           </ul>
         </div>
