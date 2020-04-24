@@ -8,19 +8,19 @@ const Sidebar = () => {
         {' '}
         Journal
       </Link>
-      <Link to='!#' className='btn btn-outline-primary w-75 my-3'>
+      <Link to='/week' className='btn btn-outline-primary w-75 my-3'>
         {' '}
-        Own Your Shit
+        Weekly Review
       </Link>
-      <Link to='!#' className='btn btn-outline-primary w-75 mb-3'>
+      <Link to='/quarter' className='btn btn-outline-primary w-75 mb-3'>
         {' '}
-        1/4 Year Review
+        Quarterly Review
       </Link>
-      <Link to='!#' className='btn btn-outline-primary w-75 mb-3'>
+      <Link to='/year' className='btn btn-outline-primary w-75 mb-3'>
         {' '}
         Yearly Review
       </Link>
-      <Link to='!#' className='btn btn-outline-primary w-75 mb-3'>
+      <Link to='/profile' className='btn btn-outline-primary w-75 mb-3'>
         {' '}
         Profile
       </Link>
